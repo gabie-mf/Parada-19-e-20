@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wow!</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="Imagens/icons8-spock-stickers-32.png">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <header id="header">
+        <div class="logo"> <img src="Imagens/icons8-spock-stickers-96.png" class="img"> </div>
+        <div class="name"> <h1>Wow Geek!</h1> </div>
+    </header>
+   
+    <nav class="nav">
+        <div class="linkNav"> <a href="index.html">Home</a> </div>
+        <div class="linkNav"> <a href="sobre.html">Sobre nós</a> </div>
+        <div class="linkNav"> <a href="contato.html">Contato</a> </div>
+    </nav>
+ 
+   <div id="bodyArticle">
+    <div class="mainArticle">
+        <article>
+            <br/>
+            <h1 class="title"> Votação </h1>
+        
+            <h1 class="subtitle"> Qual o melhor protagonista de anime da atualidade? </h1>
+            <br/>
+            <p class="article"> Dentre os protagonistas abaixo, qual é, na sua opinião, o melhor de todos os tempos?</p>
+            <br/>
+            <div class="imgVote">
+                <img src="Imagens/4.jpg" class="imgPersonagens">
+                <img src="Imagens/5.jpg" class="imgPersonagens">
+                <img src="Imagens/1.jpg" class="imgPersonagens">
+                <img src="Imagens/3.jpg" class="imgPersonagens">
+                <img src="Imagens/2.jpg" class="imgPersonagens">
+            </div>
+            
+<br/>
+
+            <button onclick="votacao()" class="voteJa">VOTE JÁ!</button>
+            <script>
+                function votacao() {
+                    let voto = prompt("Qual seu voto? Digite 1-Goku, 2-Saitama, 3-Naruto, 4-Tanjiro ou 5-Nulo.")
+                    switch(voto) {
+                        case "1": 
+                        alert("Você votou em Goku!");
+                        break;
+                        case "2":
+                        alert("Você votou em Saitama!");
+                        break;
+                        case "3":
+                        alert("Você votou em Naruto!");
+                        break;
+                        case "4":
+                        alert("Você votou em Tanjiro!");
+                        break;
+                        case "5":
+                        alert("Você votou nulo.");
+                        default:
+                        alert("Voto inválido")
+
+                    }
+                }
+            </script>
+
+<br/> <br/>
+
+            <button onclick="mudarCor()" class="mudaCor">Mudar cor de fundo</button>
+            <script>
+                function mudarCor() {
+                    let body = document.getElementById('bodyArticle')
+                    body.style.backgroundColor = '#E5E5E5'
+                }
+            </script>
+           
+           
+            <br/> <br/>
+            
+            
+        </article>
+       </div>
+       <div class="menuBack">
+        <br/>
+        <p class="textMenu">Veja mais!</p>
+        <div class="menu">
+        <br/><a href="animes.html">Animes</a> 
+        <br/><a href="series.html" >Séries</a> 
+        <br/><a href="filmes.html" >Filmes</a> 
+        <br/><a href="games.html" >Games</a> 
+        <br/><br/><br/>
+        </div>
+         
+       </div>
+
+   </div>
+     
+</body>
+<footer class="footer">
+    <br />
+    <a href="wowgeek.html">Wow Geek</a>, todos os direitos reservados, 2024 © 
+</footer>
+</html>
